@@ -1,1 +1,30 @@
 /*  your css code here. If applicable */
+#container {
+  margin: 20px;
+  position: relative;
+}
+
+
+#container::before {
+  content: "Before Element";
+  color: #f00;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+}
+#container::after {
+  content: "After Element";
+  color: #f00;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+}
+
+
+#container::before {
+  left: 10px; /* Adjust this value to control the distance before the container */
+}
+
+#container::after {
+  right: 10px; /* Adjust this value to control the distance after the container */
+}
